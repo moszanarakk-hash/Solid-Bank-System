@@ -43,12 +43,12 @@ class BankAccount(Depositable, Withdrawable, Transferable):
         print(f"ยอดเงินของ {self.owner} = {self.__balance} บาท")
 
 
-acc1 = BankAccount("สมชาย", 1000)
-acc2 = BankAccount("สมหญิง", 500)
+acc1 = BankAccount("ไบรอัน", 1200)
+acc2 = BankAccount("เดวิด", 700)
 
-acc1.deposit(500)
-acc1.withdraw(300)
-acc1.transfer(acc2, 400)
+acc1.deposit(800)
+acc1.withdraw(350)
+acc1.transfer(acc2, 450)
 
 acc1.show_balance()
 acc2.show_balance()
